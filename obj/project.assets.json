@@ -9521,23 +9521,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BergC\\.nuget\\packages\\": {},
+    "C:\\Users\\Ryan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ryan\\Documents\\GitHub\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
       "projectName": "2211_Final_Project_TGM_Blog_Tests",
-      "projectPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
-      "packagesPath": "C:\\Users\\BergC\\.nuget\\packages\\",
-      "outputPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\obj\\",
+      "projectPath": "C:\\Users\\Ryan\\Documents\\GitHub\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
+      "packagesPath": "C:\\Users\\Ryan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ryan\\Documents\\GitHub\\2211_Final_Project_TGM_Blog_Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\BergC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9552,8 +9552,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
-              "projectPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj"
+            "C:\\Users\\Ryan\\Documents\\GitHub\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
+              "projectPath": "C:\\Users\\Ryan\\Documents\\GitHub\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj"
             }
           }
         }
