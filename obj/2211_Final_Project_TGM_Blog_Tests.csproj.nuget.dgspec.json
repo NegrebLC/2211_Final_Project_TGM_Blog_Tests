@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj": {}
+    "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj": {}
   },
   "projects": {
-    "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
+    "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj",
+        "projectUniqueName": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj",
         "projectName": "2211_Final_Project_TGM_Blog",
-        "projectPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj",
-        "packagesPath": "C:\\Users\\BergC\\.nuget\\packages\\",
-        "outputPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\obj\\",
+        "projectPath": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj",
+        "packagesPath": "C:\\Users\\Kaden\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\BergC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Kaden\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,9 +45,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -111,25 +115,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj": {
+    "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
         "projectName": "2211_Final_Project_TGM_Blog_Tests",
-        "projectPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
-        "packagesPath": "C:\\Users\\BergC\\.nuget\\packages\\",
-        "outputPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog_Tests\\obj\\",
+        "projectPath": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog_Tests\\2211_Final_Project_TGM_Blog_Tests.csproj",
+        "packagesPath": "C:\\Users\\Kaden\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog_Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\BergC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Kaden\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -143,8 +143,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
-                "projectPath": "C:\\Computer Programming\\Semester 3\\2211 (C#.NET Web Applications)\\Final Project\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj"
+              "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj": {
+                "projectPath": "C:\\Users\\Kaden\\Documents\\College\\CPRO_Y2_S1\\2211 C#\\Final\\2211_Final_Project_TGM_Blog\\2211_Final_Project_TGM_Blog.csproj"
               }
             }
           }
@@ -164,9 +164,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.TestHost": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.9.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -201,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
