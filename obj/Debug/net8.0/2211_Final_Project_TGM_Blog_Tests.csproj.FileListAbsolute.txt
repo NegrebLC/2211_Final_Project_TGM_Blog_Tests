@@ -362,3 +362,4 @@ C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\
 C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\2211_Final_Project_TGM_Blog_Tests\bin\Debug\net8.0\2211_Final_Project_TGM_Blog.dll
 C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\2211_Final_Project_TGM_Blog_Tests\bin\Debug\net8.0\2211_Final_Project_TGM_Blog.pdb
 C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\2211_Final_Project_TGM_Blog_Tests\obj\Debug\net8.0\2211_Final_Project_TGM_Blog_Tests.sourcelink.json
+C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\2211_Final_Project_TGM_Blog_Tests\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll

@@ -10,6 +10,10 @@ using _2211_Final_Project_TGM_Blog.Data;
 using _2211_Final_Project_TGM_Blog.Models.SupportChat;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
+using Microsoft.AspNetCore.Identity;
+using _2211_Final_Project_TGM_Blog.Controllers.Forum;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
 {
@@ -17,9 +21,20 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
     {
         private readonly ApplicationDbContext _context;
         private readonly DefaultHttpContext _httpContext;
+        private readonly Mock<UserManager<IdentityUser>> _userManagerMock;
 
         public ChatRequestControllerTests()
         {
+            var store = new Mock<IUserStore<IdentityUser>>();
+            _userManagerMock = new Mock<UserManager<IdentityUser>>(store.Object,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null);
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
                 .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
                 .Options;
@@ -70,7 +85,7 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
         public async Task ChatRequestController_SupportDashboard_AsUser_ReturnsUserDashboardView()
         {
             // Arrange
-            var controller = new ChatRequestController(_context)
+            var controller = new ChatRequestController(_context, _userManagerMock.Object)
             {
                 ControllerContext = new ControllerContext { HttpContext = _httpContext }
             };
@@ -92,7 +107,7 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
                 new Claim(ClaimTypes.Role, "Agent"),
             }, "TestAuthentication"));
 
-            var controller = new ChatRequestController(_context)
+            var controller = new ChatRequestController(_context, _userManagerMock.Object)
             {
                 ControllerContext = new ControllerContext { HttpContext = _httpContext }
             };
@@ -119,7 +134,7 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
         new Claim(ClaimTypes.NameIdentifier, "testUserId"),
             }, "TestAuthentication"));
 
-            var controller = new ChatRequestController(context)
+            var controller = new ChatRequestController(context, _userManagerMock.Object)
             {
                 ControllerContext = new ControllerContext { HttpContext = httpContext }
             };
@@ -141,7 +156,7 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
         {
             // Arrange
             await SeedDatabaseAsync();
-            var controller = new ChatRequestController(_context)
+            var controller = new ChatRequestController(_context, _userManagerMock.Object)
             {
                 ControllerContext = new ControllerContext { HttpContext = _httpContext }
             };

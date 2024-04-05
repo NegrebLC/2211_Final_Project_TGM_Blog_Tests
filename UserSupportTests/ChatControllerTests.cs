@@ -1,37 +1,65 @@
-using _2211_Final_Project_TGM_Blog.Controllers;
-using _2211_Final_Project_TGM_Blog.Data;
-using _2211_Final_Project_TGM_Blog.Models.SupportChat;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Moq;
 using System.Security.Claims;
-using Xunit;
+using _2211_Final_Project_TGM_Blog.Controllers.Forum;
+using _2211_Final_Project_TGM_Blog.Data;
+using Microsoft.AspNetCore.Hosting;
+using _2211_Final_Project_TGM_Blog.Models.SupportChat;
+using _2211_Final_Project_TGM_Blog.Controllers;
 
 namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
 {
     public class ChatControllerTests
     {
+        private readonly Mock<ILogger<PostController>> _loggerMock;
+        private readonly Mock<IWebHostEnvironment> _hostingEnvironmentMock;
+        private readonly Mock<UserManager<IdentityUser>> _userManagerMock;
         private readonly ApplicationDbContext _context;
         private readonly DefaultHttpContext _httpContext;
 
         public ChatControllerTests()
         {
-            // Configure the DbContext to use an in-memory database
+            _loggerMock = new Mock<ILogger<PostController>>();
+            _hostingEnvironmentMock = new Mock<IWebHostEnvironment>();
+            var store = new Mock<IUserStore<IdentityUser>>();
+            _userManagerMock = new Mock<UserManager<IdentityUser>>(store.Object,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null,
+                                                                   null);
+
+            // Setup in-memory database
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .UseInMemoryDatabase(databaseName: "TestDb")
                 .Options;
             _context = new ApplicationDbContext(options);
 
-            // Setup HttpContext to simulate User Identity
             _httpContext = new DefaultHttpContext
             {
                 User = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
-                    {
-                    new Claim(ClaimTypes.NameIdentifier, "userId"),
-                    }, "TestAuthType"))
+                {
+                    new Claim(ClaimTypes.NameIdentifier, "adminUserId"),
+                    new Claim(ClaimTypes.Role, "Admin"),
+                }, "TestAuthType"))
             };
+            CleanDatabase();
         }
+
+        private void CleanDatabase()
+        {
+            _context.Chats.RemoveRange(_context.Chats);
+            _context.Messages.RemoveRange(_context.Messages);
+            _context.SaveChanges();
+        }
+
         private async Task SeedDatabaseAsync()
         {
             var chat = new Chat { Id = 1, User1Id = "userId", User2Id = "user2", StartTime = DateTime.Now, Messages = new List<Message>() };
@@ -108,11 +136,9 @@ namespace _2211_Final_Project_TGM_Blog.Tests.UserSupportTests
             // Assert
             var redirectToActionResult = Assert.IsType<RedirectToActionResult>(result);
             Assert.Equal("Index", redirectToActionResult.ActionName);
-
-            // Verifying the correct user ID is assigned
             var chatInDb = await _context.Chats.FirstOrDefaultAsync(c => c.User2Id == userId);
             Assert.NotNull(chatInDb);
-            Assert.Equal("userId", chatInDb.User1Id);
+            Assert.Equal("adminUserId", chatInDb.User1Id);
         }
 
         [Fact]
