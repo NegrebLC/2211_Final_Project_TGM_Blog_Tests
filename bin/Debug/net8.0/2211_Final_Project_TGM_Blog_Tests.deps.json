@@ -769,8 +769,6 @@
           }
         }
       },
-<<<<<<< HEAD
-=======
       "Microsoft.AspNetCore.TestHost/8.0.3": {
         "dependencies": {
           "System.IO.Pipelines": "8.0.0"
@@ -782,7 +780,6 @@
           }
         }
       },
->>>>>>> origin/userregistrationtest
       "Microsoft.AspNetCore.WebUtilities/2.2.0": {
         "dependencies": {
           "Microsoft.Net.Http.Headers": "2.2.0",
@@ -3167,8 +3164,6 @@
       "path": "microsoft.aspnetcore.razor.language/6.0.24",
       "hashPath": "microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512"
     },
-<<<<<<< HEAD
-=======
     "Microsoft.AspNetCore.TestHost/8.0.3": {
       "type": "package",
       "serviceable": true,
@@ -3176,7 +3171,6 @@
       "path": "microsoft.aspnetcore.testhost/8.0.3",
       "hashPath": "microsoft.aspnetcore.testhost.8.0.3.nupkg.sha512"
     },
->>>>>>> origin/userregistrationtest
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
       "serviceable": true,

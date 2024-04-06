@@ -732,3 +732,4 @@ C:\Users\Kaden\Documents\College\CPRO_Y2_S1\2211 C#\Final\2211_Final_Project_TGM
 C:\Users\Kaden\Documents\College\CPRO_Y2_S1\2211 C#\Final\2211_Final_Project_TGM_Blog_Tests\obj\Debug\net8.0\ref\2211_Final_Project_TGM_Blog_Tests.dll
 C:\Users\Kaden\Documents\College\CPRO_Y2_S1\2211 C#\Final\2211_Final_Project_TGM_Blog_Tests\bin\Debug\net8.0\Microsoft.AspNetCore.TestHost.dll
 >>>>>>> origin/userregistrationtest
+C:\Computer Programming\Semester 3\2211 (C#.NET Web Applications)\Final Project\2211_Final_Project_TGM_Blog_Tests\bin\Debug\net8.0\Microsoft.AspNetCore.TestHost.dll
